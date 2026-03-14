@@ -5,10 +5,11 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const issIcon = new L.Icon({
-  iconUrl: "https://i.sstatic.net/xp8Ck.png",
-  iconSize: [35, 35],
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/3212/3212608.png",
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+  popupAnchor: [0, -20],
 });
-
 function ISSMap({ lat, lon }) {
 
   const [path, setPath] = useState([]);
